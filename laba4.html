@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalWedding - Организация свадеб под ключ в Москве | Свадебное агентство</title>
+    <meta name="description" content="Профессиональная организация свадеб под ключ в Москве. Полный цикл услуг: оформление, фотосессии, подбор локаций. Гарантия качества и индивидуальный подход!">
+    <meta name="keywords" content="организация свадей, свадебное агентство, свадьба под ключ, декор для свадьбы, свадебный фотограф">
+    <meta property="og:title" content="RoyalWedding - Организация свадеб под ключ">
+    <meta property="og:description" content="Ваша идеальная свадьба с профессиональным агентством RoyalWedding">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde">
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            width: 100%;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #b6952e;
+        }
+
+        .services {
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact {
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        /* Предыдущие стили остаются без изменений */
+        .about {
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+        
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .keywords {
+            color: #d4af37;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1>RoyalWedding</h1>
+            <div class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Организация свадеб под ключ в Москве</h2>
+            <p>Профессиональная подготовка и проведение свадебных мероприятий с гарантией качества</p>
+            <button class="cta-button" onclick="openModal()">Заказать консультацию</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Наши услуги по организации свадеб</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1587271636175-90d8170b1d7e" alt="Полная организация свадьбы">
+                <h3>Полная организация</h3>
+                <h4>Свадьба под ключ</h4>
+                <p>От разработки концепции до реализации мероприятия. <span class="keywords">Организация свадеб</span> включает подбор локации, оформление и координацию дня.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74" alt="Свадебный декор и оформление">
+                <h3>Свадебный декор</h3>
+                <h4>Авторское оформление</h4>
+                <p>Уникальное оформление церемоний и банкетов. <span class="keywords">Свадебный декор</span> от лучших дизайнеров с использованием премиальных материалов.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1554301497-1f7b6d46a733" alt="Профессиональная свадебная фотосъемка">
+                <h3>Фотография и видео</h3>
+                <h4>Премиум съемка</h4>
+                <p>Профессиональная <span class="keywords">свадебная фотография</span> от топ-специалистов с обработкой в 3D-формате.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">О нашем свадебном агентстве</h2>
+            <h3>Почему выбирают RoyalWedding?</h3>
+            <p>Мы - профессиональное <span class="keywords">свадебное агентство</span> с 10-летним опытом организации торжеств. Наша команда реализовала более 200 свадебных проектов.</p>
+            <h4>Наши преимущества:</h4>
+            <p>• Индивидуальный подход к каждой паре<br>
+               • Собственная служба <span class="keywords">свадебного декора</span><br>
+               • Фото- и видеосъемка премиум-класса<br>
+               • Полный юридический сопровождение</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Полная организация</h3>
+                <p>От разработки концепции до реализации всего мероприятия</p>
+            </div>
+            <div class="service-card">
+                <h3>Свадебный декор</h3>
+                <p>Уникальное оформление свадебных церемоний и банкетов</p>
+            </div>
+            <div class="service-card">
+                <h3>Фотография и видео</h3>
+                <p>Профессиональная съемка вашего торжества</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Ваш Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Сообщение" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 RoyalWedding. Все права защищены</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+    </footer>
+    <!-- Остальные секции остаются без изменений -->
+
+    <script>
+        // Добавляем микроразметку Schema.org
+        document.addEventListener('DOMContentLoaded', function() {
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                "name": "RoyalWedding",
+                "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde",
+                "description": "Профессиональная организация свадеб под ключ",
+                "telephone": "+7 (999) 123-45-67",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Москва",
+                    "postalCode": "123456",
+                    "streetAddress": "ул. Свадебная, 1"
+                }
+            });
+            document.head.appendChild(script);
+        });
+    </script>
+</body>
+</html>
